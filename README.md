@@ -25,9 +25,11 @@ Keybindings are in `Default (Windows).sublime-keymap`, and can be edited there.
 * `hostname` - should be a hostname that WinSCP already recognizes. You'll want to make sure it's a saved session in WinSCP with that name. Preferably with a key based login. The plugin doesn't support password prompting.
 * `keep_synced` - whether to sync these directories.
 
+If you want to add more, just follow the format that it creates by default for the directories you have open.
+
 **ctrl+8** - Starts syncing the directories where `keep_synced` is set to true in `to_sync.json`.
 
 **ctrl+9** - Stops all syncing.
 
 
-When a sync is started, a watchdog process is spawned to make sure the WinSCP sessions are closed if you close Sublime without hitting `ctrl+9` first. Sublime unfortunately does not appear to have any sort of callback on closing, so something like this was necessary. The implementation is admittedly naive and could be improved. But for now it works to make sure you don't have all sorts of rogue WinSCP sessions laying around whenever you close Sublime.
+When a sync is started, a watchdog process is spawned to make sure the WinSCP sessions are closed if you close Sublime without hitting `ctrl+9` first. Sublime unfortunately does not appear to have any sort of callback on closing (that I could find in the API at least), so something like this was necessary. The implementation is admittedly naive and could be improved. But for now it works to make sure you don't have all sorts of rogue WinSCP sessions laying around whenever you close Sublime.
