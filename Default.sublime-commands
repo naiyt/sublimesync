@@ -1,0 +1,20 @@
+[
+	{
+		"id": "sublimesync",
+		"caption": "SublimeSync: Set directories to sync",
+		"command": "sublime_sync",
+		"args": {"setup_sync": "True"}
+	},
+	{
+		"id": "sublimesync",
+		"caption": "SublimeSync: Start syncing directories",
+		"command": "sublime_sync",
+		"args": {"start_sync": "True"}
+	},
+	{
+		"id": "sublimesync",
+		"caption": "SublimeSync: Stop syncing",
+		"command": "sublime_sync",
+		"args": {"stop_sync": "True"}
+	}
+]

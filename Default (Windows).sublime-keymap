@@ -1,0 +1,23 @@
+[
+	{
+		"keys": ["ctrl+7"],
+		"id": "sublimesync",
+		"caption": "SublimeSync: Set directories to sync",
+		"command": "sublime_sync",
+		"args": {"setup_sync": "True"}
+	},
+	{
+		"keys": ["ctrl+8"],
+		"id": "sublimesync",
+		"caption": "SublimeSync: Start syncing directories",
+		"command": "sublime_sync",
+		"args": {"start_sync": "True"}	
+	},
+	{
+		"keys": ["ctrl+9"],
+		"id": "sublimesync",
+		"caption": "SublimeSync: Stop syncing",
+		"command": "sublime_sync",
+		"args": {"stop_sync": "True"}
+	}
+]
